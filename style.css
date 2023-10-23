@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+*{
+        font-family: 'Baloo Thambi 2', cursive;
+}
+body {
+    color:azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#000;
+}
+.button button{
+    border-radius: 20px;
+}
+.container{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.container > span {
+    animation: glow 2.8s ease-in-out infinite;
+}
+
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px rgb(190, 27, 255), 0 0 50px rgb(183, 27, 255), 0 0 100px rgb(183, 27, 255)
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.container > span:nth-child(1) {
+    animation-delay: 0s;
+}
+.container > span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.container > span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.container > span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.container > span:nth-child(5) {
+    animation-delay: 1s;
+}
+.container > span:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.container > span:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.container > span:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.container > span:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.container > span:nth-child(10) {
+    animation-delay: 2s;
+}
+.container > span:nth-child(11) {
+    animation-delay: 2.2s;
+}
+
+.kata{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color: #111;
+}
+
+@media screen and (max-width:574px){
+    .container{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .kata{
+        font-size: 1rem;
+        margin-bottom: -40px;
+        text-align: center;
+    }
+    .button{
+        font-size: 5rem;
+    }
+} 
+    
